@@ -33,12 +33,18 @@ body {
 
   background: linear-gradient(
     135deg,
-    #1e40af 0%,
-    #2563eb 45%,
-    #7c3aed 100%
+    #e0f2fe 0%,
+    #dbeafe 35%,
+    #ede9fe 70%,
+    #ffffff 100%
   );
 
-  color: white;
+  color: #0f172a;
+}
+.hero .container {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 3.5rem 3rem;
+  border-radius: 28px;
 }
 
 .hero h1 {
@@ -47,7 +53,7 @@ body {
 }
 
 .hero h1 span {
-  color: #c7d2fe;
+  color: #4f46e5;
 }
 
 .hero-sub {
