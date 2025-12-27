@@ -1,132 +1,139 @@
-/* RESET */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-/* TŁO – BARDZO SUBTELNY GRADIENT */
 body {
+  margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: #0f172a;
   line-height: 1.7;
 
   background:
-  radial-gradient(
-    1200px 650px at 0% 0%,
-    rgba(224, 242, 254, 0.85),
-    transparent
-  ),
-  radial-gradient(
-    1200px 650px at 100% 20%,
-    rgba(237, 233, 254, 0.85),
-    transparent
-  ),
-  #ffffff;
-
+    radial-gradient(1200px 800px at 10% 0%, rgba(224,242,254,.9), transparent 60%),
+    radial-gradient(1000px 700px at 90% 10%, rgba(237,233,254,.85), transparent 60%),
+    radial-gradient(900px 600px at 50% 100%, rgba(241,245,249,.9), transparent 55%),
+    #ffffff;
 }
 
-/* HERO */
+a {
+  color: inherit;
+}
+
 .hero {
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 6rem 1rem 4rem;
+  text-align: center;
 }
 
 .hero-card {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-
-  padding: 4rem 4.5rem;
-  border-radius: 32px;
-  max-width: 900px;
-  text-align: center;
-
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.06);
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 2.5rem;
 }
 
 .hero h1 {
-  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  font-size: clamp(2.8rem, 6vw, 4rem);
   font-weight: 800;
-  letter-spacing: -0.015em;
+  margin-bottom: 1.5rem;
 }
 
 .hero h1 span {
-  color: #4f46e5;
+  font-weight: 700;
 }
 
 .hero-sub {
-  margin-top: 2.4rem;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #475569;
-}
-.hero-quote {
-  margin-top: 2.6rem;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #1e293b;
-  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
-/* SEKCJE */
+.hero-quote {
+  font-size: 1rem;
+}
+
 .section {
-  padding: 6.5rem 0;
+  padding: 4rem 1rem;
 }
 
 .container {
   max-width: 900px;
   margin: 0 auto;
+  padding: 2.5rem;
 }
 
-/* GLASS CARD */
 .glass {
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255,255,255,.65);
   backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-
-  padding: 4.2rem 4.5rem;
-  border-radius: 32px;
-
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  box-shadow:
-    0 30px 60px rgba(0, 0, 0, 0.06),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  border-radius: 22px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.08);
 }
 
-
-/* TEKST */
 h2 {
-  font-size: 2.1rem;
-  margin-bottom: 1.6rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
-  margin-top: 1.6rem;
-  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
-p {
-  font-size: 1.08rem;
-  line-height: 1.85;
-  letter-spacing: 0.01em;
-  color: #334155;
-  margin-bottom: 1.4rem;
+.center {
+  text-align: center;
 }
 
+.work-list {
+  list-style: none;
+  padding: 0;
+}
 
-/* KONTAKT */
-.contact a {
-  color: #2563eb;
+.work-list li {
+  padding: .4rem 0;
+}
+
+.work-note {
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+.offers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 2rem;
+}
+
+.offer {
+  padding: 2.5rem;
+}
+
+.muted {
+  color: #475569;
+  font-size: .95rem;
+}
+
+.offer-contact {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: .7rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(15,23,42,.15);
   text-decoration: none;
+  font-weight: 500;
+  background: rgba(255,255,255,.6);
+  backdrop-filter: blur(10px);
+  transition: all .25s ease;
 }
 
-/* FOOTER */
+.offer-contact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.contact {
+  text-align: center;
+}
+
 footer {
   text-align: center;
-  padding: 3rem;
-  font-size: 0.9rem;
-  color: #64748b;
+  padding: 2rem;
+  font-size: .9rem;
+  color: #475569;
 }
